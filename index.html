@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--links-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBoutique</title>
+</head>
+<body ng-app="myApp">
+<header>
+    <img src="assets/images/logo.png">
+    <ul>
+        <li><a ui-sref="welcome">WELCOME</a></li>
+        <li><a ui-sref="our_macarons">OUR MACARONS</a></li>
+        <li><a ui-sref="gifts&parties">GIFTS & PARTIES</a></li>
+        <li><a ui-sref="contact">CONTACT</a></li>
+    </ul>
+</header>
+<div ui-view></div>
+<footer>
+    <ul>
+        <li><img src="assets/images/mail.png"> order@mboutique.com</li>
+        <li><img src="assets/images/phone.png"> 949.800-311</li>
+        <li>Follow us <img src="assets/images/facebook.png"> <img src="assets/images/twitter.png"></li>
+    </ul>
+    <p>Copyright @2014 MBoutique. All rights reserved.</p>
+</footer>
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+<script src="angular.js"></script>
+<script src="welcome.html"></script>
+<script src="our_macarons.html"></script>
+<script src="gifts&parties.html"></script>
+<script src="contact.html"></script>
+</body>
+</html>
